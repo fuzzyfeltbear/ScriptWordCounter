@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <ComponentGroup Id="ScriptWordCounter" Directory="INSTALLFOLDER">
+      <Component Id="ScriptWordCounter.exe" >
+        <File KeyPath="yes" Id="ScriptWordCounter.exe" Source="ScriptWordCounter.exe"/>
+        <File Source="ScriptWordCounter.deps.json"/>
+        <File Source="ScriptWordCounter.runtimeconfig.json"/>
+        <Shortcut Advertise="yes" Id="StartMenuShortcut" Directory="ShortcutFolder" Name="Script Word Counter" WorkingDirectory="INSTALLFOLDER" />
+        <RemoveFolder Id="ShortcutFolder" Directory="ShortcutFolder" On="uninstall" />
+      </Component>
+      <Component Id="ScriptWordCounter.dll">
+        <File Source="ScriptWordCounter.dll"/>
+      </Component>
+      
+    </ComponentGroup>
+  </Fragment>
+</Wix>
+

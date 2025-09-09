@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package 
+    Id="FuzzyFeltBear.ScriptWordCounter" 
+    Name="Script Word Counter" 
+    Manufacturer="FuzzyFeltBear" 
+    Version="!(bind.FileVersion.ScriptWordCounter.exe)" 
+    UpgradeCode="{879ECAC0-B01D-46AA-B872-A8B6ECAB5753}" 
+    Scope="perMachine">
+    <Property Id="DISABLEADVTSHORTCUTS" Value="1" />
+    <MediaTemplate EmbedCab="yes"  />
+    <MajorUpgrade DowngradeErrorMessage="A newer version is already installed."/>
+    <Feature Id="ScriptWordCounter">
+      <ComponentGroupRef Id="ScriptWordCounter"/>
+    </Feature>
+  </Package>
+</Wix>
