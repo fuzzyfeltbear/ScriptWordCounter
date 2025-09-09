@@ -4,9 +4,10 @@ A simple utility intended for the GWA and similar audio script communities to ma
 
 # Download and usage instructions
 
-- Click [here](https://github.com/fuzzyfeltbear/ScriptWordCounter/releases/latest/download/ScriptWordCounter.zip) to download the latest version
-- Extract the zip folder somewhere on your computer
-- Run ScriptWordCounter.exe from that folder
-- When Microsoft SmartScreen warns you, click "More info", then "Run anyway" 
-- Paste your script into the text box
+- Click [here](https://github.com/fuzzyfeltbear/ScriptWordCounter/releases/latest/download/ScriptWordCounter.msi) to download the latest version
+- Double-click the downloaded file.
+- Click "Yes" to install
+- Run "Script Word Counter" from the start menu
+- If Microsoft SmartScreen warns you, click "More info", then "Run anyway". I promise it's safe, but a "certificate" to hide this warning would cost me £200 per year.`
+- Paste your script into the text box, the word count will automatically update at the bottom of the window.
  
